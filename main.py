@@ -3,13 +3,14 @@ from twilio.rest import Client
 import json
 import random
 STOCK = "TSLA"
+import os
 COMPANY_NAME = "Tesla Inc"
-API_KEY = " RZ71JJGZ1RNZ75YU"
+API_KEY = os.environ['API_KEY']
 
-account_sid = "AC66fe244187dc027510063aeada19e93d"
-auth_token = "6c13d62650d5ace6833b93df9caf51e9"
+account_sid = os.environ['ACC_SID']
+auth_token = os.environ['AUTH_TK']
 
-NEWS_API = "581d6ec07ee3478f86fac7b4b5c2b59b"
+NEWS_API = os.environ['NEWS_API']
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
 stock_param={
